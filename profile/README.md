@@ -19,58 +19,62 @@
 
 ---
 
-## The Problem
+## What tends to break when AI moves past pilots
 
-Your teams are building impressive AI demos in Lovable, Replit, and n8n. But they never reach production.
+Your teams are building impressive AI demos in Lovable, Replit, and n8n. But they never reach production. The challenge is operating agents reliably as usage spreads across teams, environments, and tool surfaces.
 
-**Why?** The Context Gap.
+**Why?** 
 
-- 🔓 **Shadow AI Sprawl** — 20+ different auth tokens, no audit trails
-- 💸 **Context Obesity** — Bloated prompts costing thousands, delivering confused answers  
-- 🔁 **Integration Hell** — Rebuilding the same Salesforce connection for every agent
+- **Governance gaps** — no consistent place to enforce SSO/RBAC, approvals, or audit trails  
+- **Integration sprawl** - every client wires every tool with its own config, retries, and auth
+- **Operational blind spots** - debugging is slow, costs are hard to attribute, and failures are hard to trace end-to-end
+- **Context Obesity** — Bloated, expensive prompts delivering confused answers  
 
-Agents hallucinate because they lack unified access to enterprise data. IT locks down access because they lack visibility into what AI is doing.
+When those problems aren’t solved, teams either stall (over-centralize) or sprawl (ship shadow AI). Agents hallucinate because they lack unified access to enterprise data. IT locks down access because they lack visibility into what AI is doing.
 
 ---
 
-## The Solution: decoCMS
+## What deco CMS is
 
-**decoCMS** is an open-source Context Management System for platform teams. Connect tools and data via MCP, enforce access and policy, and ship agentic software that teams can trust.
+**deco CMS** is an open-source Context Management System for platform teams. 
+
+It gives you:
+- a production control plane for MCP traffic (connect, govern, observe)
+- a path to package durable, reusable capabilities (so teams stop reinventing the same “agent”)
+- a way to distribute what works safely across teams over time
+
+---
+
+## The platform 
 
 <table>
 <tr>
 <td width="33%" valign="top">
 
-### 🧱 MCP Mesh
+### MCP Mesh
 **Foundation**
 
-A secure, observable control plane for MCP traffic.
-
-One endpoint for all MCP servers with policy enforcement, audit trails, and multiple runtime strategies.
+One secure endpoint for every MCP server. Route, govern, observe and optimize MCP traffic with policy enforcement, audit trails, and multiple runtime strategies.
 
 [**Explore MCP Mesh →**](https://github.com/decocms/mesh)
 
 </td>
 <td width="33%" valign="top">
 
-### 🛠️ MCP Studio
+### MCP Studio
 **Development**
 
-Create and curate MCP capabilities as reusable building blocks.
-
-No-code admin + full-code SDK to turn internal systems into secure tools with consistent interfaces.
+No-code admin + SDK to package MCP capabilities as reusable building blocks. Turn tools + schemas + workflows into apps with consistent interfaces and permissions. 
 
 [**Get Early Access →**](https://decocms.com/studio)
 
 </td>
 <td width="33%" valign="top">
 
-### 🏪 MCP Store
+### MCP Apps & Store
 **Distribution**
 
-Marketplace for composing, consuming, and monetizing MCP apps.
-
-Use pre-built capabilities on governed infrastructure. Builders can monetize their creations.
+Marketplace for composing, consuming, and (eventually) monetizing MCP apps.
 
 [**Coming Soon**](https://decocms.com)
 
@@ -80,23 +84,16 @@ Use pre-built capabilities on governed infrastructure. Builders can monetize the
 
 ---
 
-## Architecture at a Glance
-
-| Layer | Purpose | What It Is | What You Do |
-|-------|---------|------------|-------------|
-| **MCP Mesh** | Infrastructure | Gateway + Runtime + Control Plane | Connect systems, enforce policies, monitor, debug |
-| **MCP Studio** | Development | No-code admin + Full-code SDK | Create MCP apps, test on the mesh |
-| **MCP Store** | Distribution | Marketplace for MCP capabilities | Discover, install, and monetize apps |
-
----
-
 ## Why MCP?
 
-We're built on the [Model Context Protocol](https://modelcontextprotocol.io) standard — aligned with Anthropic and OpenAI architectural patterns.
+We're built on the [Model Context Protocol](https://modelcontextprotocol.io) because enterprises need interoperability at the tool layer, and a way to operate that tool access with the same rigor as any other production surface.
 
-- **Open & Portable** — Self-host on Kubernetes, deploy on-prem, or use our cloud
-- **Composable** — Swap models, swap tools, swap agents. The Mesh remains your constant
-- **No Lock-in** — Your context, your infrastructure. Audit the code, fork if needed
+MCP gives you a standard interface. deco CMS provides the control plane around it:
+
+- **Portable** — Self-host on Kubernetes, deploy on-prem, or use our cloud (coming soon)
+- **Composable** — swap models, swap MCP servers, adopt community tools, build your own  
+- **Auditable** — centralized policies, logs, and traces across tool + model calls  
+- **No lock-in** — Your context, your infrastructure. Audit the code, fork if needed
 
 ---
 
@@ -106,21 +103,21 @@ We're built on the [Model Context Protocol](https://modelcontextprotocol.io) sta
 npx @decocms/mesh init
 ```
 
-→ One command to spin up your local MCP Mesh
+→ One command spins up a local MCP Mesh so you can connect MCP servers and test with MCP clients
 
 ---
 
-## The Category: Context Management
+## Category: Context Management
 
-Most "AI platforms" optimize prompts. AI-native companies optimize **context**.
+Most AI efforts optimize prompts. AI-native companies optimize **context**.
 
-Better context produces better outputs — and outcomes create new context.
+Better context produces better outputs — and outcomes create new context (feedback, policies, routing decisions, and reusable components).
 
-decoCMS is built for closed-loop systems: instrument every call, learn what works, and improve routing/retrieval/execution over time.
+deco CMS is built for that loop: instrument every call, learn what works, and improve routing, retrieval, execution over time.
 
 ---
 
-## Get Started
+## Links
 
 | | |
 |---|---|
@@ -130,15 +127,6 @@ decoCMS is built for closed-loop systems: instrument every call, learn what work
 | 📧 **Contact** | [contact@decocms.com](mailto:contact@decocms.com) |
 
 ---
-
-<div align="center">
-<strong>Own your context. Ship autonomous systems with control.</strong>
-
-<br/><br/>
-
-[Explore MCP Mesh](https://github.com/decocms/mesh) · [Get Studio Early Access](https://decocms.com/studio)
-
-<br/><br/>
 
 <sub>Made with ❤️ by the deco community</sub>
 </div>
