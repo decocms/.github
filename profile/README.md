@@ -11,8 +11,8 @@
 </p>
 
 <p align="center">
-<a href="https://decocms.com/mesh">MCP Mesh</a> · 
-<a href="https://decocms.com/studio">MCP Studio</a> · 
+<a href="https://decocms.com/mcp-mesh">MCP Mesh</a> · 
+<a href="https://decocms.com/mcp-studio">MCP Studio</a> · 
 <a href="https://docs.deco.page">Docs</a> · 
 <a href="https://decocms.com/discord">Discord</a>
 </p>
@@ -66,7 +66,7 @@ One secure endpoint for every MCP server. Route, govern, observe and optimize MC
 
 No-code admin + SDK to package MCP capabilities as reusable building blocks. Turn tools + schemas + workflows into apps with consistent interfaces and permissions. 
 
-[**Get Early Access →**](https://decocms.com/studio)
+[**Get Early Access →**](https://decocms.com/mcp-studio)
 
 </td>
 <td width="33%" valign="top">
@@ -124,8 +124,6 @@ deco CMS is built for that loop: instrument every call, learn what works, and im
 | 📘 **Documentation** | [docs.deco.page](https://docs.deco.page) |
 | 💬 **Community** | [Discord](https://decocms.com/discord) |
 | 🌐 **Website** | [decocms.com](https://decocms.com) |
-| 📧 **Contact** | [contact@decocms.com](mailto:contact@decocms.com) |
-
 ---
 
 <sub>Made with ❤️ by the deco community</sub>
