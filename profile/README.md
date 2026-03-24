@@ -4,116 +4,109 @@
   <img alt="decoCMS" src="https://github.com/user-attachments/assets/d3e36c98-4609-46d3-b39f-7ee1c6d77432">
 </picture>
 
-<h1 align="center">Context Management for AI-Native Operations</h1>
+<h1 align="center">The Visual CMS with Built-in AI Agents</h1>
 
 <p align="center">
-<strong>Turn scattered AI experiments into production systems<br/>by making context infrastructure a first-class layer.</strong>
+<strong>AI agent teams that continuously optimize, fix, and evolve e-commerce storefronts.</strong>
 </p>
 
 <p align="center">
-<a href="https://decocms.com/mcp-mesh">MCP Mesh</a> · 
-<a href="https://decocms.com/mcp-studio">MCP Studio</a> · 
-<a href="https://docs.deco.page">Docs</a> · 
+<a href="https://decocms.com">Website</a> ·
+<a href="https://decocms.com/studio">Studio</a> ·
+<a href="https://docs.deco.page">Docs</a> ·
 <a href="https://decocms.com/discord">Discord</a>
 </p>
 
 ---
 
-## What tends to break when AI moves past pilots
+## What is deco CMS?
 
-Your teams are building impressive AI demos in Lovable, Replit, and n8n. But they never reach production. The challenge is operating agents reliably as usage spreads across teams, environments, and tool surfaces.
+deco CMS builds AI agent teams that continuously optimize, fix, and evolve e-commerce storefronts. Powered by deco's own AI platform, these agents autonomously handle everything from SEO content creation and product catalog enrichment to performance monitoring and deployment — orchestrating specialized models and commerce APIs through a single unified layer.
 
-**Why?** 
+Think of it as an e-commerce agency operated by AI: always on, infinitely scalable, and getting smarter with every cycle.
 
-- **Governance gaps** — no consistent place to enforce SSO/RBAC, approvals, or audit trails  
-- **Integration sprawl** - every client wires every tool with its own config, retries, and auth
-- **Operational blind spots** - debugging is slow, costs are hard to attribute, and failures are hard to trace end-to-end
-- **Context Obesity** — Bloated, expensive prompts delivering confused answers  
+- **Monitor & Fix** — Scans your storefront for errors, broken pages, and performance issues. Deploys fixes automatically.
+- **Optimize** — Analyzes product listings, banners, and content. Ships data-driven improvements with measurable conversion lift.
+- **Create** — Generates blog posts, landing pages, and SEO content. Plans, writes, and publishes against real performance data.
+- **Edit** — Visual editor with real-time preview, instant rollback, and Git-backed version control. Edit by talking, not by clicking.
 
-When those problems aren’t solved, teams either stall (over-centralize) or sprawl (ship shadow AI). Agents hallucinate because they lack unified access to enterprise data. IT locks down access because they lack visibility into what AI is doing.
-
----
-
-## What deco CMS is
-
-**deco CMS** is an open-source Context Management System for platform teams. 
-
-It gives you:
-- a production control plane for MCP traffic (connect, govern, observe)
-- a path to package durable, reusable capabilities (so teams stop reinventing the same “agent”)
-- a way to distribute what works safely across teams over time
+Works with **Shopify, VTEX**, and any headless or custom stack. No migration required.
 
 ---
 
-## The platform 
+## deco Studio
+
+The open-source control plane behind the agents.
+
+Studio is where you hire agents, connect tools, organize them into projects, and track every token and dollar. It's the operating system for AI teams — whether you're running commerce agents or building your own.
 
 <table>
 <tr>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
-### MCP Mesh
-**Foundation**
-
-One secure endpoint for every MCP server. Route, govern, observe and optimize MCP traffic with policy enforcement, audit trails, and multiple runtime strategies.
-
-[**Explore MCP Mesh →**](https://github.com/decocms/mesh)
+### Agents & Connections
+Browse and hire specialized AI agents. Connect 50+ tools — GitHub, Slack, Postgres, Linear, OpenRouter, Sentry, and more — with one-click OAuth. Per-agent cost tracking and attribution.
 
 </td>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
-### MCP Studio
-**Development**
-
-No-code admin + SDK to package MCP capabilities as reusable building blocks. Turn tools + schemas + workflows into apps with consistent interfaces and permissions. 
-
-[**Get Early Access →**](https://decocms.com/mcp-studio)
-
-</td>
-<td width="33%" valign="top">
-
-### MCP Apps & Store
-**Distribution**
-
-Marketplace for composing, consuming, and (eventually) monetizing MCP apps.
-
-[**Coming Soon**](https://decocms.com)
+### Projects & Observability
+Organize agents and connections around goals. Each project gets its own UI shaped by what's inside. Real-time token spend, latency, and error tracking across every connection.
 
 </td>
 </tr>
 </table>
 
+```bash
+# Run locally
+bunx decocms
+```
+
+Self-host on your laptop, use our managed cloud at [studio.decocms.com](https://studio.decocms.com), or deploy on your own infrastructure.
+
+[**Explore Studio →**](https://github.com/decocms/studio)
+
 ---
 
-## Why MCP?
+## How it works
 
-We're built on the [Model Context Protocol](https://modelcontextprotocol.io) because enterprises need interoperability at the tool layer, and a way to operate that tool access with the same rigor as any other production surface.
+```
+1. CONNECT — Git, analytics, commerce platforms — agents enter your existing infrastructure
+2. DIAGNOSE — Identify issues and opportunities, quantify impact
+3. ACT — Ship improvements — code deployed, outcomes owned
+4. MEASURE — Attribute changes to conversion, revenue, performance
+5. EVOLVE — Improve guardrails so the next cycle is safer and smarter
+```
 
-MCP gives you a standard interface. deco CMS provides the control plane around it:
+Every cycle makes the system better. Guardrails compound. Shipping with agents becomes safer than shipping by hand.
 
-- **Portable** — Self-host on Kubernetes, deploy on-prem, or use our cloud (coming soon)
-- **Composable** — swap models, swap MCP servers, adopt community tools, build your own  
-- **Auditable** — centralized policies, logs, and traces across tool + model calls  
-- **No lock-in** — Your context, your infrastructure. Audit the code, fork if needed
+---
+
+## Why deco CMS?
+
+- **No migration required** — Integrates with your existing storefront and platform
+- **Autonomous, not autopilot** — Agents work independently within guardrails you define. Approve, reject, or let them run
+- **Open source** — Core framework is open source. Audit the code, self-host, fork if needed
+- **Observable** — Centralized traces, costs, errors, and latency. Every tool call tracked
+- **Composable** — Swap models, swap tools, build your own agents. Built on the [Model Context Protocol](https://modelcontextprotocol.io)
+
+---
+
+## About
+
+Founded by Guilherme Rodrigues (CEO) and Rafael Crespo (CMO), both ex-VTEX — the leading commerce platform in Latin America (NYSE: VTEX). deco already powers 150+ storefronts in Brazil, including some of the largest B2C brands in the country.
 
 ---
 
 ## Quick Start
 
 ```bash
-npx @decocms/mesh init
+# Get a free diagnostic for your storefront
+# → decocms.com
+
+# Or run Studio locally
+bunx decocms
 ```
-
-→ One command spins up a local MCP Mesh so you can connect MCP servers and test with MCP clients
-
----
-
-## Category: Context Management
-
-Most AI efforts optimize prompts. AI-native companies optimize **context**.
-
-Better context produces better outputs — and outcomes create new context (feedback, policies, routing decisions, and reusable components).
-
-deco CMS is built for that loop: instrument every call, learn what works, and improve routing, retrieval, execution over time.
 
 ---
 
@@ -121,10 +114,11 @@ deco CMS is built for that loop: instrument every call, learn what works, and im
 
 | | |
 |---|---|
-| 📘 **Documentation** | [docs.deco.page](https://docs.deco.page) |
-| 💬 **Community** | [Discord](https://decocms.com/discord) |
-| 🌐 **Website** | [decocms.com](https://decocms.com) |
+| **Documentation** | [docs.deco.page](https://docs.deco.page) |
+| **Community** | [Discord](https://decocms.com/discord) |
+| **Website** | [decocms.com](https://decocms.com) |
+| **Studio** | [decocms.com/studio](https://decocms.com/studio) |
+
 ---
 
-<sub>Made with ❤️ by the deco community</sub>
-</div>
+<sub>Made with care by the <a href="https://decocms.com">deco</a> community</sub>
