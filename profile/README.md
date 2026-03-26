@@ -13,7 +13,7 @@
 <p align="center">
 <a href="https://decocms.com">Website</a> ·
 <a href="https://decocms.com/studio">Studio</a> ·
-<a href="https://docs.deco.page">Docs</a> ·
+<a href="https://docs.decocms.com">Docs</a> ·
 <a href="https://decocms.com/discord">Discord</a>
 </p>
 
@@ -114,7 +114,7 @@ bunx decocms
 
 | | |
 |---|---|
-| **Documentation** | [docs.deco.page](https://docs.deco.page) |
+| **Documentation** | [docs.decocms.com](https://docs.decocms.com) |
 | **Community** | [Discord](https://decocms.com/discord) |
 | **Website** | [decocms.com](https://decocms.com) |
 | **Studio** | [decocms.com/studio](https://decocms.com/studio) |
